@@ -64,7 +64,7 @@ a {
 
 main {
   color: #FFFFFF; /* Cor dos textos da main */
-  height: 28rem; /* Altura da main */
+  height: 30rem; /* Altura da main */
   padding: 2rem; /* Espaçamento interno da main */
 }
 
@@ -87,6 +87,7 @@ main h2 {
   flex-direction: column; /* Define a direção dos itens dentro da div como uma coluna */
   padding: 20px; /* Espaçamento interno dos cursos */
   border-radius: 3px; /* Borda arredondada */
+  margin-top: 50px;
 }
 
 img {

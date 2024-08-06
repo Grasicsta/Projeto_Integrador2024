@@ -64,7 +64,7 @@ a {
 
 main {
   color: #FFFFFF; /* Cor dos textos da main */
-  height: 28rem; /* Altura da main */
+  height: 30rem; /* Altura da main */
   padding: 2rem; /* Espaçamento interno da main */
 }
 
@@ -88,6 +88,7 @@ main h2 {
   text-align: center; /* Alinha os textos no centro */
   width: 250px; /* Largura das ONGs */
   height: 250px; /* Altura das ONGs */
+  margin-top: 50px;
 }
 
 img {

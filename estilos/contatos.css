@@ -66,7 +66,6 @@ main {
   color: #FFFFFF; /* Cor dos textos */
   display: flex; /* Display flexível nos itens do corpo da página */
   justify-content: space-around; /* Define um espaçamento igual entre os itens do corpo */
-  height: 28rem; /* Altura da página */
   padding: 2rem; /* Espaçamento interno da página */
 }
 
@@ -75,6 +74,10 @@ main {
   justify-content: center; /* Centraliza os conteúdos horizontalmente */
   align-items: center; /* Centraliza os conteúdos verticalmente */
   flex-direction: column; /* Define a direção dos itens como uma coluna */
+  background-color: #009FE3;
+  padding: 10px;
+  border-radius: 5px;
+  width: 30%;
 }
 
 form {
@@ -87,6 +90,7 @@ form {
   background-color: #009FE3; /* Cor de fundo das seções */
   padding: 25px; /* Espaçamento interno das seções */
   border-radius: 6px; /* Borda arredondada das seções */
+  margin: 20px;
 }
 
 h2 {
@@ -125,4 +129,20 @@ footer nav ul li {
 footer p {
   display: flex; /* Deixa o display do parágrafo flexível */
   justify-content: center; /* Centraliza o parágrafo no meio */
+}
+
+input{
+  color: #000;
+  margin: 10px 0px 10px 0px;
+  border-radius: 5px;
+  border: none;
+  width: 90%;
+  padding: 10px;
+}
+
+.entrar{
+  width: 100px;
+  margin: 15px 0px 15px 0px;
+  color: #009fe3;
+  background-color: #ffc90d;
 }

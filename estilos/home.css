@@ -65,7 +65,6 @@ a {
 
 main {
   color: #FFFFFF; /* Cor dos textos da página */
-  height: 28rem; /* Altura do corpo da página */
   padding: 2rem; /* Espaçamento dos itens do corpo da página */
 }
 
@@ -82,11 +81,15 @@ main div {
 }
 
 main div section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   background-color: #009FE3; /* Cor de fundo das seções */
   text-align: center; /* Alinha o texto no centro */
   margin: 25px; /* Define a margem da seção */
   padding: 20px; /* Define o espaçamento interno da seção */
-  width: 260px; /* Define a largura da seção */
+  width: 30%; /* Define a largura da seção */
   height: 200px; /* Define a altura da seção */
   border-radius: 15px; /* Arredonda as bordas da seção */
 }
@@ -101,6 +104,7 @@ footer {
   background-color: #009FE3; /* Cor de fundo do rodapé */
   color: #FFC90D; /* Cor dos textos do rodapé */
   padding: 1rem; /* Espaçamento do rodapé */
+  margin-bottom: 0;
 }
 
 footer nav {
