@@ -1,30 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Importando as fontes para a página */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    font-family: "Poppins", sans-serif;
+* {
+    font-family: "Poppins", sans-serif; /* Aplica a fonte na página toda */
     font-weight: 600;
     font-style: normal;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Retira toda a margem padrão da página */
+    padding: 0;  /* Retira todo o preenchimento padrão da página */
 }
 
 body{
     background-color: #009fe3;
-    margin: 0;
 }
 
-form{
-    background-color: #009fe3;
-    width: 80%;
-    height: 70%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
+/* Cabeçalho da página */
 
-header{
+header {
     background-color: #fbf388;
     color: #009fe3;
     height: 15%;
@@ -35,15 +26,9 @@ header{
     align-items: center;
 }
 
-#formulario{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Conteúdo principal da página */
 
-section{
+section {
     position: absolute;
     background-color: #009fe3;
     height: 80%;
@@ -51,38 +36,55 @@ section{
     width: 100%;
 }
 
+#formulario {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-label{
+form {
+    background-color: #009fe3;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
     color: #fff;
     margin: 10px 0px 7px 0px;
 }
 
-a{
+input {
+    color: #000;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+    padding: 10px;
+}
+
+span {
+    color: #e24a4a;
+}
+
+a {
     text-decoration: none;
     color: #fbf388;
 }
 
-input{
-   color: #000;
-   margin: 10px 0px 10px 0px;
-   border-radius: 5px;
-   border: none;
-   width: 70%;
-   padding: 10px;
+.entrar {
+    width: 100px;
+    margin: 15px 0px;
+    color: #009fe3;
+    background-color: #ffc90d;
 }
 
-.entrar{
-   width: 100px;
-   margin: 15px 0px 15px 0px;
-   color: #009fe3;
-   background-color: #ffc90d;
-}
-
-span{
-    color: #e24a4a;
-}
-
-p{
-    margin: 10px 0px 10px 0px;
+p {
+    margin: 10px 0px;
     color: #fff;
 }

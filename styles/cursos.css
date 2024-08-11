@@ -1,5 +1,4 @@
 /* Importando as fontes para a página */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -55,24 +54,12 @@ header nav ul li a:hover {
   background-color: #0056B3; /* Cor de fundo quando o cursor está sobre o botão */
 }
 
-a {
-  text-decoration: none; /* Remove toda a decoração dos textos/links <a> */
-  color: #FFFFFF; /* Cor do texto */
-}
-
 /* Conteúdo principal da página */
 
 main {
   color: #FFFFFF; /* Cor dos textos da main */
   height: 30rem; /* Altura da main */
   padding: 2rem; /* Espaçamento interno da main */
-}
-
-main h2 {
-  display: flex; /* Display flexível no h2 */
-  justify-content: center; /* Centraliza o h2 */
-  font-size: 2rem; /* Tamanho da fonte */
-  margin-bottom: 1rem; /* Define uma margem inferior ao h2 */
 }
 
 .section { /* Classe adicionada a seção de cursos */
@@ -115,6 +102,11 @@ footer nav ul li {
   margin: 0 20px; /* Adiciona margem ao texto; o primeiro valor (0) é para cima e baixo, e o segundo (20px) para os lados */
   padding-bottom: 7px; /* Adiciona espaçamento interno para baixo na lista */
   width: 6rem; /* Adiciona uma largura de distância aos itens da lista */
+}
+
+a {
+  text-decoration: none; /* Remove toda a decoração dos textos/links <a> */
+  color: #FFFFFF; /* Cor do texto */
 }
 
 footer p {
