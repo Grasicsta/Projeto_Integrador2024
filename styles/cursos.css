@@ -1,4 +1,5 @@
 /* Importando as fontes para a página */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -54,62 +55,63 @@ header nav ul li a:hover {
   background-color: #0056B3; /* Cor de fundo quando o cursor está sobre o botão */
 }
 
-/* Conteúdo principal da página */
+a {
+    text-decoration: none; /* Remove toda a decoração dos textos/links <a> */
+    color: #FFFFFF; /* Cor do texto */
+  }
 
-main {
-  color: #FFFFFF; /* Cor dos textos da main */
-  height: 30rem; /* Altura da main */
-  padding: 2rem; /* Espaçamento interno da main */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
 }
 
-.section { /* Classe adicionada a seção de cursos */
-  display: flex; /* Display flexível na seção */
-  justify-content: space-around; /* Adiciona um espaçamento igual em volta das seções */
-}
+section {
+    display: flex; /* Display flexível na seção */
+    justify-content: space-around; /* Adiciona um espaçamento igual em volta das seções */
+  }
 
 .curso { /* Classe adicionada as divs de cursos */
-  background-color: #009FE3; /* Cor de fundo dos cursos */
-  display: flex; /* Display flexível para edição */
-  align-items: center; /* Alinha os itens verticalmente no centro */
-  flex-direction: column; /* Define a direção dos itens dentro da div como uma coluna */
-  padding: 20px; /* Espaçamento interno dos cursos */
-  border-radius: 3px; /* Borda arredondada */
-  margin-top: 50px;
-}
+    background-color: #009FE3; /* Cor de fundo dos cursos */
+    display: flex; /* Display flexível para edição */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    flex-direction: column; /* Define a direção dos itens dentro da div como uma coluna */
+    padding: 20px; /* Espaçamento interno dos cursos */
+    border-radius: 3px; /* Borda arredondada */
+    margin: 50px;
+  }
+  
+  img {
+    width: 300px;
+    height: 300px;
+  }
 
-img {
-  width: 300px; /* Largura da imagens */
-  height: 300px; /* Altura da imagens */
-}
-
-/* Rodapé da página */
-
-footer {
-  background-color: #009FE3; /* Cor de fundo do rodapé */
-  color: #FFC90D; /* Cor dos textos do rodapé */
-  padding: 1rem; /* Espaçamento do rodapé */
-}
-
-footer nav {
-  display: flex; /* Define o display da nav como flexível (flexbox) */
-  justify-content: center; /* Centraliza os itens da nav horizontalmente */
-  align-items: center; /* Centraliza os itens da nav verticalmente */
-}
-
-footer nav ul li {
-  list-style: none; /* Remove toda estilização padrão dos textos */
-  display: inline-block; /* Alinha os itens em formato de linha */
-  margin: 0 20px; /* Adiciona margem ao texto; o primeiro valor (0) é para cima e baixo, e o segundo (20px) para os lados */
-  padding-bottom: 7px; /* Adiciona espaçamento interno para baixo na lista */
-  width: 6rem; /* Adiciona uma largura de distância aos itens da lista */
-}
-
-a {
-  text-decoration: none; /* Remove toda a decoração dos textos/links <a> */
-  color: #FFFFFF; /* Cor do texto */
-}
-
-footer p {
-  display: flex; /* Deixa o display do parágrafo flexível */
-  justify-content: center; /* Centraliza o parágrafo no meio */
-}
+  footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #009FE3; /* Cor de fundo do rodapé */
+    color: #FFC90D; /* Cor dos textos do rodapé */
+    padding: 1rem; /* Espaçamento do rodapé */
+  }
+  
+  footer nav {
+    display: flex; /* Define o display da nav como flexível (flexbox) */
+    justify-content: center; /* Centraliza os itens da nav horizontalmente */
+    align-items: center; /* Centraliza os itens da nav verticalmente */
+  }
+  
+  footer nav ul li {
+    list-style: none; /* Remove toda estilização padrão dos textos */
+    display: inline-block; /* Alinha os itens em formato de linha */
+    margin: 0 20px; /* Adiciona margem ao texto; o primeiro valor (0) é para cima e baixo, e o segundo (20px) para os lados */
+    padding-bottom: 7px; /* Adiciona espaçamento interno para baixo na lista */
+    width: 6rem; /* Adiciona uma largura de distância aos itens da lista */
+  }
+  
+  footer p {
+    display: flex; /* Deixa o display do parágrafo flexível */
+    justify-content: center; /* Centraliza o parágrafo no meio */
+  }
