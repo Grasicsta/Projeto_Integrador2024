@@ -10,14 +10,14 @@
 }
 
 body {
-    background-color: #009fe3; /* Aplica uma cor de fundo ao corpo da página */
+    background-color: #009FE3; /* Aplica uma cor de fundo ao corpo da página */
 }
 
 /* Cabeçalho da página */
 
 header {
-    background-color: #fbf388;
-    color: #009fe3;
+    background-color: #FBF388;
+    color: #009FE3;
     height: 15%;
     margin-right: 0px;
     position: relative;
@@ -30,7 +30,7 @@ header {
 
 section {
     position: absolute;
-    background-color: #009fe3;
+    background-color: #009FE3;
     height: 80%;
     display: flex;
     width: 100%;
@@ -45,7 +45,7 @@ section {
 }
 
 form {
-    background-color: #009fe3;
+    background-color: #009FE3;
     width: 80%;
     height: 70%;
     display: flex;
@@ -55,7 +55,7 @@ form {
 }
 
 label {
-    color: #fff;
+    color: #FFFFFF;
     margin: 10px 0px 7px 0px;
 }
 
@@ -69,30 +69,65 @@ input {
 }
 
 span {
-    color: #e24a4a;
+    color: #E24A4A;
 }
 
 a {
     text-decoration: none;
-    color: #fbf388;
+    color: #FBF388;
 }
 
 .cadastrar {
     width: 100px;
     margin: 15px 0px;
-    color: #009fe3;
-    background-color: #ffc90d;
+    color: #009FE3;
+    background-color: #FFC90D;
     margin-right: 15px;
 }
 
 .limpar {
     width: 100px;
     margin: 15px 0px;
-    color: #009fe3;
+    color: #009FE3;
     background-color: #ffc90d;
 }
 
 p {
-    margin: 10px 0px;
-    color: #fff;
+    color: #FFFFFF;
+}
+
+/* Estilização do formulário com JS */
+
+.campo-obrigatorio::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+
+input.error {
+    background-color: #E8F0FE;
+    border: solid 3px #992020;
+    color: #662020;
+}
+
+input.correct {
+    background-color: #E8F0FE;
+    border: solid 3px #0056B3;
+    color:#003670;
+}
+
+.visible {
+    display: block;
 }

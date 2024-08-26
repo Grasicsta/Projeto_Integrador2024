@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Importando a folha de estilo CSS -->
     <link rel="stylesheet" href="styles/cadastro.css">
+    <!-- Importando o script JavaScript -->
+    <script src="scripts/cadastro.js" defer></script>
     <!-- Adicionando o logo na guia da página -->
     <link rel="icon" href="img/logo.png" sizes="32x32" type="image/x-icon">
     <title>Cadastre-se</title>
@@ -23,17 +25,26 @@
             <article id="formulario">
                 <form>
                     <label for="user">Usuário: <span>*</span></label>
-                    <input type="text" nome="usuario" id="user" placeholder="ex: joão/maria" required size="50">
+                    <input type="text" name="usuario" id="username" placeholder="ex: joão/maria" required size="50">
+                    <p id="user-helper" class="helper-text">Mensagem de ajuda</p>
+
                     <label for="email">E-mail: <span>*</span></label>
-                    <input type="email" nome="email" id="email" placeholder="ex: hicommunity@hotmail.com" required size="50">
+                    <input type="email" name="email" id="email" placeholder="ex: hicommunity@hotmail.com" required size="50">
+                    <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
                     <label for="pswd">Senha: <span>*</span></label>
-                    <input type="password" name="senha" id="pswd" required size="50">
+                    <input type="password" name="senha" id="senha" required size="50">
+                    <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+
                     <label for="pswdConfirm">Confirmar senha: <span>*</span></label>
-                    <input type="password" name="senhaConfirma" id="pswdConfirm" required size="50">
+                    <input type="password" name="senhaConfirma" id="senhaConfirma" required size="50">
+                    <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
+
                     <div id="cadastro">
                         <input type="submit" value="Cadastrar" class="cadastrar">
                         <input type="reset" value="Limpar" class="limpar">
                     </div>
+                    
                     <p>Já possui uma conta? <a href="/login.html">Login</a></p>
                 </form>
             </article>
