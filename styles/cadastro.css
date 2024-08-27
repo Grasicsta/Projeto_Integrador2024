@@ -57,6 +57,7 @@ form {
 label {
     color: #FFFFFF;
     margin: 10px 0px 7px 0px;
+    display: flex;
 }
 
 input {
@@ -89,7 +90,7 @@ a {
     width: 100px;
     margin: 15px 0px;
     color: #009FE3;
-    background-color: #ffc90d;
+    background-color: #FFC90D;
 }
 
 p {
@@ -100,6 +101,14 @@ p {
 
 .campo-obrigatorio::after {
     content: "*Campo obrigatório";
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    background-color: #202020;
+}
+
+/*.campo-obrigatorio::after {
+    content: "*Campo obrigatório";
     position: absolute;
     top: 0;
     right: 0;
@@ -109,7 +118,8 @@ p {
     width: auto;
     display: block;
     background-color: #202020;
-}
+}*/
+
 .helper-text {
     display: none;
     font-size: .8rem;
