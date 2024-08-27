@@ -1,47 +1,15 @@
-/* Importando as fontes para a página */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    font-family: "Poppins", sans-serif; /* Aplica a fonte na página toda */
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    margin: 0; /* Retira toda a margem padrão da página */
-    padding: 0;  /* Retira todo o preenchimento padrão da página */
 }
 
-body{
+body {
     background-color: #009fe3;
-}
-
-/* Cabeçalho da página */
-
-header {
-    background-color: #fbf388;
-    color: #009fe3;
-    height: 15%;
-    margin-right: 0px;
-    position: relative;
-    padding: 3rem;
-    display: flex;
-    align-items: center;
-}
-
-/* Conteúdo principal da página */
-
-section {
-    position: absolute;
-    background-color: #009fe3;
-    height: 80%;
-    display: flex;
-    width: 100%;
-}
-
-#formulario {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
 }
 
 form {
@@ -54,22 +22,37 @@ form {
     align-items: center;
 }
 
+header {
+    background-color: #fbf388;
+    color: #009fe3;
+    height: 15%;
+    margin-right: 0px;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#formulario {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    position: absolute;
+    background-color: #009fe3;
+    height: 80%;
+    display: flex;
+    width: 100%;
+}
+
+
 label {
     color: #fff;
     margin: 10px 0px 7px 0px;
-}
-
-input {
-    color: #000;
-    margin: 10px 0px;
-    border-radius: 5px;
-    border: none;
-    width: 70%;
-    padding: 10px;
-}
-
-span {
-    color: #e24a4a;
 }
 
 a {
@@ -77,14 +60,66 @@ a {
     color: #fbf388;
 }
 
+input {
+    color: #000;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+    padding: 10px;
+}
+
 .entrar {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    height: 10%;
     width: 100px;
-    margin: 15px 0px;
+    margin: 15px 0px 15px 0px;
     color: #009fe3;
     background-color: #ffc90d;
 }
 
+span {
+    color: #e24a4a;
+}
+
 p {
-    margin: 10px 0px;
+    margin: 10px 0px 10px 0px;
     color: #fff;
+}
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+
+.visible {
+    display: block;
 }
