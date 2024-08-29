@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #B9D9F2; /* Aplica uma cor de fundo ao corpo da página */
+  background-color: #B9D9F2;
 }
 
 /* Cabeçalho da página */
@@ -21,21 +21,21 @@ header {
   justify-content: space-between; /* Dá um espaçamento no meio dos itens do header */
   padding: 2rem; /* Adiciona um preenchimento interno ao header */
 }
-
+  
 h1 {
   color: #009FE3; /* Aplica uma cor no título (h1) */
   font-size: 2rem;  /* Define o tamanho da fonte */
 }
-
+  
 header nav ul {
   list-style: none; /* Remove os marcadores padrão da lista */
 }
-
+  
 header nav ul li {
   display: inline-block; /* Exibe os itens em linha, como botões */
   margin: 0 20px; /* Espaçamento entre os botões */
 }
-
+  
 header nav ul li a {
   display: block; /* Faz com que o link ocupe todo o espaço do item da lista */
   width: 100px; /* Define a largura fixa dos botões */
@@ -54,63 +54,43 @@ header nav ul li a:hover {
   background-color: #0056B3; /* Cor de fundo quando o cursor está sobre o botão */
 }
 
-a {
-    text-decoration: none; /* Remove toda a decoração dos textos/links <a> */
-    color: #FFFFFF; /* Cor do texto */
-}
+/* Conteúdo principal da página */
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
 }
 
-section {
-    display: flex; /* Display flexível na seção */
-    justify-content: space-around; /* Adiciona um espaçamento igual em volta das seções */
-}
-
-.curso { /* Classe adicionada as divs de cursos */
-    background-color: #009FE3; /* Cor de fundo dos cursos */
-    display: flex; /* Display flexível para edição */
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    flex-direction: column; /* Define a direção dos itens dentro da div como uma coluna */
-    padding: 20px; /* Espaçamento interno dos cursos */
-    border-radius: 3px; /* Borda arredondada */
-    margin: 50px;
-}
-  
-img {
-    width: 300px;
-    height: 300px;
-}
+/* Rodapé da página */
 
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #009FE3; /* Cor de fundo do rodapé */
-    color: #FFC90D; /* Cor dos textos do rodapé */
-    padding: 1rem; /* Espaçamento do rodapé */
+  background-color: #009FE3; /* Cor de fundo do rodapé */
+  color: #FFC90D; /* Cor dos textos do rodapé */
+  padding: 1rem; /* Espaçamento do rodapé */
 }
   
 footer nav {
-    display: flex; /* Define o display da nav como flexível (flexbox) */
-    justify-content: center; /* Centraliza os itens da nav horizontalmente */
-    align-items: center; /* Centraliza os itens da nav verticalmente */
+  display: flex; /* Define o display da nav como flexível (flexbox) */
+  justify-content: center; /* Centraliza os itens da nav horizontalmente */
+  align-items: center; /* Centraliza os itens da nav verticalmente */
 }
   
 footer nav ul li {
-    list-style: none; /* Remove toda estilização padrão dos textos */
-    display: inline-block; /* Alinha os itens em formato de linha */
-    margin: 0 20px; /* Adiciona margem ao texto; o primeiro valor (0) é para cima e baixo, e o segundo (20px) para os lados */
-    padding-bottom: 7px; /* Adiciona espaçamento interno para baixo na lista */
-    width: 6rem; /* Adiciona uma largura de distância aos itens da lista */
+  list-style: none; /* Remove toda estilização padrão dos textos */
+  display: inline-block; /* Alinha os itens em formato de linha */
+  margin: 0 20px; /* Adiciona margem ao texto; o primeiro valor (0) é para cima e baixo, e o segundo (20px) para os lados */
+  padding-bottom: 7px; /* Adiciona espaçamento interno para baixo na lista */
+  width: 6rem; /* Adiciona uma largura de distância aos itens da lista */
 }
-  
+
+a {
+  text-decoration: none; /* Remove toda a decoração dos textos/links <a> */
+  color: #FFFFFF; /* Cor do texto */
+}
+
 footer p {
-    display: flex; /* Deixa o display do parágrafo flexível */
-    justify-content: center; /* Centraliza o parágrafo no meio */
+  display: flex; /* Deixa o display do parágrafo flexível */
+  justify-content: center; /* Centraliza o parágrafo no meio */
 }

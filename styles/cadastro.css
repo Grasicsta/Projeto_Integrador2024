@@ -79,6 +79,9 @@ a {
 }
 
 .cadastrar {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
     width: 100px;
     margin: 15px 0px;
     color: #009FE3;
@@ -87,6 +90,9 @@ a {
 }
 
 .limpar {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
     width: 100px;
     margin: 15px 0px;
     color: #009FE3;
@@ -101,14 +107,6 @@ p {
 
 .campo-obrigatorio::after {
     content: "*Campo obrigatório";
-    color: #DFDFDF;
-    font-size: .65rem;
-    padding: .2rem .3rem;
-    background-color: #202020;
-}
-
-/*.campo-obrigatorio::after {
-    content: "*Campo obrigatório";
     position: absolute;
     top: 0;
     right: 0;
@@ -118,7 +116,7 @@ p {
     width: auto;
     display: block;
     background-color: #202020;
-}*/
+}
 
 .helper-text {
     display: none;
@@ -127,15 +125,15 @@ p {
 }
 
 input.error {
-    background-color: #E8F0FE;
-    border: solid 3px #992020;
+    background-color: #CCBBBB;
+    border: solid 2px #992020;
     color: #662020;
 }
 
 input.correct {
-    background-color: #E8F0FE;
-    border: solid 3px #0056B3;
-    color:#003670;
+    border: solid 2px #206620;
+    background-color: #BBCCBB;
+    color: #206620;
 }
 
 .visible {

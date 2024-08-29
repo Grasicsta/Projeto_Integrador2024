@@ -32,13 +32,13 @@ let usernameHelper = document.getElementById("user-helper");
 campoObrigatorio(usernameInput, usernameLabel);
 
 // Validar valor do input
-usernameInput.addEventListener("blur", (e) => {
+usernameInput.addEventListener("input", (e) => {
     let inputValue = e.target.value;
 
-    if(inputValue.length < 6) {
-        // Adicionar estilos dinâmicos se o valor tiver menos de 6 caracteres
+    if(inputValue.length < 8) {
+        // Adicionar estilos dinâmicos se o valor tiver menos de 8 caracteres
         estilizarInputIncorreto(usernameInput, usernameHelper);
-        usernameHelper.innerText = "Seu nome de usuário precisa ter 6 ou mais caracteres";
+        usernameHelper.innerText = "Seu nome de usuário precisa ter 8 ou mais caracteres";
         inputsCorretos.usuario = false;
     } else {
         // Adicionar estilos dinâmicos se o valor estiver correto
@@ -56,7 +56,7 @@ let emailHelper = document.getElementById("email-helper");
 campoObrigatorio(emailInput, emailLabel);
 
 // Validar valor do input
-emailInput.addEventListener("blur", (e) => {
+emailInput.addEventListener("input", (e) => {
     let inputValue = e.target.value;
 
     if(inputValue.includes("@") && inputValue.includes(".com")) {
@@ -80,13 +80,13 @@ let senhaHelper = document.getElementById("senha-helper");
 campoObrigatorio(senhaInput, senhaLabel);
 
 // Validar valor do input
-senhaInput.addEventListener("blur", (e) => {
+senhaInput.addEventListener("input", (e) => {
     let inputValue = e.target.value;
 
-    if(inputValue.length < 8) {
-        // Adicionar estilos dinâmicos se o valor tiver menos de 8 caracteres
+    if(inputValue.length < 6) {
+        // Adicionar estilos dinâmicos se o valor tiver menos de 6 caracteres
         estilizarInputIncorreto(senhaInput, senhaHelper);
-        senhaHelper.innerText = "Sua senha precisa ter no mínimo 8 caracteres";
+        senhaHelper.innerText = "Sua senha precisa ter no mínimo 6 caracteres";
         inputsCorretos.senha = false;
     } else {
         // Adicionar estilos dinâmicos se o valor estiver correto
@@ -104,7 +104,7 @@ let senhaConfirmaHelper = document.getElementById("confirma-senha-helper");
 campoObrigatorio(senhaConfirmaInput, senhaConfirmaLabel);
 
 // Validar valor do input
-senhaConfirmaInput.addEventListener("blur", (e) => {
+senhaConfirmaInput.addEventListener("input", (e) => {
     let senhaConfirmaValue = e.target.value;
 
     if(senhaConfirmaValue == senhaInput.value && inputsCorretos.senha == true) {
@@ -134,8 +134,8 @@ btnInputSubmit.addEventListener("click", (e) => {
        inputsCorretos.senha == false ||
        inputsCorretos.senhaConfirma == false) {
        e.preventDefault();
-       alert("Você precisa preencher todos os campos");
+       alert("Você precisa preencher todos os campos obrigatórios");
     } else {
-       alert("Cadastro concluído");
+       alert("Cadastro concluído com sucesso!");
     }
 });
