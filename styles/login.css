@@ -33,11 +33,22 @@ header {
 }
 
 #formulario {
-    width: 70%;
+    width: 60%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    left: 40%;
+    position: absolute;
+}
+
+#imgLogin{
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    background-position: center;
 }
 
 section {

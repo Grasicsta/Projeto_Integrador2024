@@ -60,12 +60,19 @@ main {
   color: #FFFFFF; /* Cor dos textos da main */
   height: 30rem; /* Altura da main */
   padding: 2rem; /* Espaçamento interno da main */
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .section { /* Classe definida para a seção de ONGs */
   display: flex; /* Display flexível para a seção de ONGs */
   justify-content: space-around; /* Espaçamento igual entre as ONGs */
   flex-wrap: wrap; /* Quebra de linha caso o conteúdo seja maior que a tela */
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 30%
 }
 
 .ong { /* Classe adicionada as divs de ONGs */
@@ -87,6 +94,10 @@ img {
 /* Rodapé da página */
 
 footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-color: #009FE3; /* Cor de fundo do rodapé */
   color: #FFC90D; /* Cor dos textos do rodapé */
   padding: 1rem; /* Espaçamento do rodapé */

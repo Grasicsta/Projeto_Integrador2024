@@ -69,6 +69,10 @@ footer {
   background-color: #009FE3; /* Cor de fundo do rodapé */
   color: #FFC90D; /* Cor dos textos do rodapé */
   padding: 1rem; /* Espaçamento do rodapé */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
   
 footer nav {
