@@ -11,70 +11,69 @@ body {
     margin: 0;
 }
 
-form {
-    background-color: #009fe3;
-    width: 80%;
-    height: 70%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
 header {
     background-color: #fbf388;
     color: #009fe3;
-    height: 15%;
-    margin-right: 0px;
-    position: relative;
-    padding: 2rem;
+    height: 20%;
+    padding: 1%;
+    right: 0;
+    left: 0;
+    position: absolute;
     display: flex;
     align-items: center;
+    top: 0;
 }
 
-#formulario {
-    width: 60%;
-    height: 100%;
+main{
+    height: 80%;
+    margin-top: 11.3%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 40%;
-    position: absolute;
+    position: fixed;
+}
+
+main div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #imgLogin{
-    width: 40%;
-    height: 100%;
-    position: fixed;
     background-image: url("../img/logo.png");
     background-size: cover;
     background-position: center;
+    left: 0;
+    top: 20%;
 }
 
-section {
-    position: absolute;
-    background-color: #009fe3;
-    height: 80%;
+#formulario {
+    padding: 1%;
     display: flex;
-    width: 100%;
-}
-
-label {
+    flex-flow: column;
+    justify-content: center;
     color: #fff;
-    margin: 10px 0px 7px 0px;
+    width: 70%;
 }
 
-a {
+#formulario a{
     text-decoration: none;
     color: #fbf388;
 }
 
-input {
+#formulario label{
+    margin: 10px 0px 7px 0px;
+}
+
+#formulario input{
+    margin: 10px 0px 7px 0px;
     color: #000;
     margin: 10px 0px 10px 0px;
     border-radius: 5px;
     border: none;
-    width: 70%;
+    width: 100%;
     padding: 10px;
 }
 
@@ -82,20 +81,20 @@ input {
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    height: 10%;
+    height: 7%;
     width: 100px;
     margin: 15px 0px 15px 0px;
     color: #009fe3;
     background-color: #ffc90d;
+    align-self: center;
+}
+
+p{
+    align-self: center;
 }
 
 span {
     color: #e24a4a;
-}
-
-p {
-    margin: 10px 0px 10px 0px;
-    color: #fff;
 }
 
 .helper-text {
@@ -115,6 +114,7 @@ p {
     width: auto;
     display: block;
     background-color: #202020;
+    margin: 1%;
 }
 
 input.error {

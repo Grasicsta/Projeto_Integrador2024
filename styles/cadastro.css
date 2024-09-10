@@ -16,102 +16,90 @@ body {
 /* Cabeçalho da página */
 
 header {
-    background-color: #FBF388;
-    color: #009FE3;
+    background-color: #fbf388;
+    color: #009fe3;
     height: 15%;
-    margin-right: 0px;
-    position: relative;
-    padding: 3rem;
+    padding: 1%;
+    right: 0;
+    left: 0;
+    position: absolute;
     display: flex;
     align-items: center;
+    top: 0;
+}
+
+main{
+    height: 85%;
+    margin-top: 9%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+main div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Conteúdo principal da página */
 
-section {
-    position: absolute;
-    background-color: #009FE3;
-    height: 80%;
-    display: flex;
-    width: 100%;
-}
-
-#formulario {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 40%;
-}
-
 #imgCadastro{
-    width: 40%;
-    height: 100%;
-    position: fixed;
     background-image: url("../img/sinal_2.png");
     background-size: cover;
     background-position: center;
+    left: 0;
+    top: 20%;
 }
 
-form {
-    background-color: #009FE3;
-    width: 80%;
-    height: 70%;
+#formulario {
+    padding: 1%;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
+    color: #fff;
+    width: 70%;
 }
 
-label {
-    color: #FFFFFF;
+#formulario a{
+    text-decoration: none;
+    color: #fbf388;
+}
+
+#formulario label{
     margin: 10px 0px 7px 0px;
-    display: flex;
 }
 
-input {
-   color: #000;
-   margin: 10px 0px;
-   border-radius: 5px;
-   border: none;
-   width: 70%;
-   padding: 10px;
+#formulario input{
+    margin: 7px 0px 7px 0px;
+    color: #000;
+    margin: 7px 0px 7px 0px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 10px;
 }
 
 span {
     color: #E24A4A;
 }
 
-a {
-    text-decoration: none;
-    color: #FBF388;
-}
-
-.cadastrar {
+.botao{
     border-radius: 10px;
-    border: none;
     cursor: pointer;
-    width: 100px;
-    margin: 15px 0px;
-    color: #009FE3;
-    background-color: #FFC90D;
-    margin-right: 15px;
-}
-
-.limpar {
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    margin: 15px 0px;
-    color: #009FE3;
-    background-color: #FFC90D;
+    margin: 15px 0px 15px 0px;
+    color: #009fe3;
+    background-color: #ffc90d;
+    align-self: center;
+    height: 5%;
+    width: 20%;
 }
 
 p {
-    color: #FFFFFF;
+    align-self: center;
 }
 
 /* Estilização do formulário com JS */
@@ -127,6 +115,7 @@ p {
     width: auto;
     display: block;
     background-color: #202020;
+    margin: 1%;
 }
 
 .helper-text {

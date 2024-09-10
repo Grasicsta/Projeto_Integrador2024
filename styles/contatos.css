@@ -121,7 +121,7 @@ input {
 
 footer {
   position: absolute;
-  bottom: 0;
+  margin-bottom: 0;
   right: 0;
   left: 0;
   background-color: #009FE3; /* Cor de fundo do rodapé */

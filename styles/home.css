@@ -16,10 +16,17 @@ body {
 /* Cabeçalho da página */
 
 header {
-  background-color: #FBF388; /* Aplica uma cor de fundo ao cabeçalho da página */
-  display: flex;  /* Flexbox, deixa os itens flexíveis para serem editados */
-  justify-content: space-between; /* Dá um espaçamento no meio dos itens do header */
-  padding: 2rem; /* Adiciona um preenchimento interno ao header */
+  background-color: #fbf388;
+  color: #009fe3;
+  height: 15%;
+  padding: 1%;
+  right: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  justify-content: space-between;
 }
 
 h1 {
@@ -59,6 +66,7 @@ header nav ul li a:hover {
 main {
   color: #FFFFFF; /* Cor dos textos da página */
   padding: 2rem; /* Espaçamento dos itens do corpo da página */
+  margin-top: 9%;
 }
 
 main div {
@@ -74,15 +82,15 @@ main div section {
   align-items: center;
   background-color: #009FE3; /* Cor de fundo das seções */
   text-align: center; /* Alinha o texto no centro */
-  margin: 25px; /* Define a margem da seção */
-  padding: 20px; /* Define o espaçamento interno da seção */
-  width: 30%; /* Define a largura da seção */
-  height: 200px; /* Define a altura da seção */
+  margin: 3%; /* Define a margem da seção */
+  padding: 2%; /* Define o espaçamento interno da seção */
+  width: 40%; /* Define a largura da seção */
   border-radius: 15px; /* Arredonda as bordas da seção */
+  position: relative;
 }
 
 main div section p {
-  margin-top: 1rem; /* Define um margem no topo das seções */
+  margin-top: 1rem; 
 }
 
 /* Rodapé da página */
@@ -92,7 +100,7 @@ footer {
   color: #FFC90D; /* Cor dos textos do rodapé */
   padding: 1rem; /* Espaçamento do rodapé */
   position: absolute;
-  bottom: 0;
+  margin-bottom: 0;
   right: 0;
   left: 0;
 }
