@@ -14,7 +14,7 @@ body {
 }
 
 /* Cabeçalho da página */
-
+/*
 header {
   background-color: #fbf388;
   color: #009fe3;
@@ -27,6 +27,13 @@ header {
   align-items: center;
   top: 0;
   justify-content: space-between;
+}*/
+
+header {
+  background-color: #FBF388; /* Aplica uma cor de fundo ao cabeçalho da página */
+  display: flex;  /* Flexbox, deixa os itens flexíveis para serem editados */
+  justify-content: space-between; /* Dá um espaçamento no meio dos itens do header */
+  padding: 2rem; /* Adiciona um preenchimento interno ao header */
 }
 
 h1 {
@@ -66,7 +73,7 @@ header nav ul li a:hover {
 main {
   color: #FFFFFF; /* Cor dos textos da página */
   padding: 2rem; /* Espaçamento dos itens do corpo da página */
-  margin-top: 9%;
+  margin-top: 2%;
 }
 
 main div {
