@@ -61,6 +61,7 @@ main {
   display: flex; /* Display flexível nos itens do corpo da página */
   justify-content: space-around; /* Define um espaçamento igual entre os itens do corpo */
   padding: 2rem; /* Espaçamento interno da página */
+  margin-bottom: 5%;
 }
 
 #contactus { /* ID da seção "Contate-nos" */
@@ -120,8 +121,8 @@ input {
 /* Rodapé da página */
 
 footer {
-  position: absolute;
-  margin-bottom: 0;
+position: fixed;
+    bottom: 0;
   right: 0;
   left: 0;
   background-color: #009FE3; /* Cor de fundo do rodapé */

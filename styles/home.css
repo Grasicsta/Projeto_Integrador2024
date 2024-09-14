@@ -80,6 +80,7 @@ main div {
   display: flex; /* Define o display como flexível */
   justify-content: space-around; /* Coloca um espaçamento igual entre cada item da div */
   flex-wrap: wrap; /* Quebra a linha caso o conteúdo ultrapasse o tamanho da tela */
+  align-items: center;
 }
 
 main div section {
@@ -89,9 +90,9 @@ main div section {
   align-items: center;
   background-color: #009FE3; /* Cor de fundo das seções */
   text-align: center; /* Alinha o texto no centro */
-  margin: 3%; /* Define a margem da seção */
+  margin: 1%; /* Define a margem da seção */
   padding: 2%; /* Define o espaçamento interno da seção */
-  width: 40%; /* Define a largura da seção */
+  width: 30%; /* Define a largura da seção */
   border-radius: 15px; /* Arredonda as bordas da seção */
   position: relative;
 }
@@ -107,7 +108,7 @@ footer {
   color: #FFC90D; /* Cor dos textos do rodapé */
   padding: 1rem; /* Espaçamento do rodapé */
   position: absolute;
-  margin-bottom: 0;
+  bottom: 0;
   right: 0;
   left: 0;
 }
