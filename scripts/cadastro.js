@@ -120,7 +120,7 @@ senhaConfirmaInput.addEventListener("input", (e) => {
 });
 
 // --------------- EVITAR ENVIO AUTOMÁTICO DO FORMULÁRIO --------------- //
-let btnInputSubmit = document.querySelector('input[type="submit"]');
+let btnInputSubmit = document.querySelector('button[type="submit"]');
 let inputsCorretos = {
     usuario: false,
     email: false,
